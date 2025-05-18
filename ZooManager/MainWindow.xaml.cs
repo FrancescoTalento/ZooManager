@@ -27,8 +27,7 @@ namespace ZooManager
         public MainWindow()
         {
             InitializeComponent();
-            //  string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
-            //  sqlConnection = new SqlConnection(connectionString);
+   
             ShowZoos();
             ShowAnimals();
             //Register();
@@ -37,7 +36,7 @@ namespace ZooManager
 
         private void ShowZoos()
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -62,7 +61,7 @@ namespace ZooManager
         }
         private void ShowAnimals()
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -104,7 +103,7 @@ namespace ZooManager
         private void ShowAssociatedAnimals()
         {
             if (listZoos.SelectedValue == null) return;
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
 
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
@@ -166,7 +165,7 @@ namespace ZooManager
 
         private void DeleteZoo_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -193,7 +192,7 @@ namespace ZooManager
 
         private void addZoo_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -237,7 +236,7 @@ namespace ZooManager
 
         private void updateZoo_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -280,7 +279,7 @@ namespace ZooManager
         }
         private void addAnimalZoo_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -322,7 +321,7 @@ namespace ZooManager
         }
         private void removeAnimalZoo_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -356,7 +355,7 @@ namespace ZooManager
         }
         private void addAnimal_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -395,7 +394,7 @@ namespace ZooManager
 
         private void deleteAnimal_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using (SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
@@ -426,7 +425,7 @@ namespace ZooManager
         }
         private void updateAnimal_click(object sender, RoutedEventArgs e)
         {
-            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=SQLDaMicrosoft;Pooling=False;Encrypt=True;Trust Server Certificate=True";
+            string connectionString = "Data Source=AlienPC;Initial Catalog=ZooDB;Persist Security Info=True;User ID=sa;Password=PASSWORD;Pooling=False;Encrypt=True;Trust Server Certificate=True";
             using(SqlConnection sqlConnection = new SqlConnection(connectionString))
             {
                 try
